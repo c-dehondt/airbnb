@@ -250,6 +250,11 @@ h1{
   flex-flow: nowrap;
   display: flex;
   justify-content:space-between;
+  align-items: center;
+}
+
+.revenu{
+  width:60%;
 }
 
 footer{
