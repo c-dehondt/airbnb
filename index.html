@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icon.css">
-    <title></title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <title>Airbnb</title>
   </head>
   <body>
 
 <!-- *************************************************debut du header********************************************     -->
     <header>
-      <img src="images/logo/icon.png" alt="logo"> <!-- ****logo du site**** -->
-      <nav>
-        <ul>
+      <div class="accueil">
+       <img class="logo" src="images/logo/icon.png" alt="logo"><i class="material-icons"></i> <!-- ****logo du site**** -->
+       <nav class="pc home">
+        <ul class="menu">
           <li><a href="#">Devenez hôte</a></li>
           <li><a href="#">Aide</a></li>
           <li><a href="#">Inscription</a></li>
           <li><a href="#">Connexion</a></li>
         </ul>
       </nav>
-      <h1>Ou souhaitez vous aller? <br>Votre prochaine aventure commence sur Airbnb</h1>
-      <form class="" action="index.html" method="post">
+      </div>
+      <h1><span class="titre">Ou souhaitez vous aller?</span> Votre prochaine aventure commence sur Airbnb</h1>
+      <form class="pc navigation"  action="index.html" method="post">
         <div class="info">
-         <label for="">Ou</label>
+         <label>Ou</label>
          <input type="text" name="partout" placeholder="Partout" value=""><span class= "icon-html-five"></span>
         </div>
-        <div>
-         <label for="">Quand</label>
-         <input type="texte" placeholder="date indifférente" name="date indifférente" value="">
+        <div class="info">
+         <label>Quand</label>
+         <input type="text" placeholder="date indifférente" name="date indifférente" value="">
        </div>
-       <div>
-         <label for="">Voyageurs</label>
+       <div class="info">
+         <label>Voyageurs</label>
          <input type="text" placeholder="1voyageur" name="1 voyageur" value="">
-         <button type="button" name="button">recherche</button>
+         <button type="button" name="button">Recherche</button>
        </div>
      </form>
-     <nav class="tablette">
-       <a href="#">partout</a>
-       <a href="#">Quand</a>
-       <a href="#">Voyageurs</a>
+     <nav class="tab tablette">
+       <a href="#"><i class="material-icons">search</i>Partout</a>
+       <a href="#"><i class="fa fa-calendar-o" aria-hidden="true"></i> Dates indiférentes</a>
+       <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i>Voyageurs</a>
      </nav>
+     <button class="recherche" type="button" name="button">
+       <i class="material-icons">search</i>Partout. dates indifférentes...</button>
     </header>
 <!-- ******************************************************fin du header************************************ -->
     <main>
-      <nav>
-        <a href="#">recommandé</a>
+      <nav class="raccourcie">
+        <a href="#"><span class="recommande">recommandé</span></a>
         <a href="#">logements</a>
         <a href="#">expériences</a>
         <a href="#">Lieux</a>
@@ -54,40 +59,40 @@
 <!-- ******************************************debut reservées**************************************************       -->
       <section class="reservees">
         <h2>Réservées à l'instant</h2>
-        <div class="gallery1">
+        <div class="gallery">
         <figure>
           <img class="pc" src="images/imagespc/reservees1.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/reservees1.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/reservees1.jpg" alt="gallery">
-          <figcaption>29€ Feel-good vibes in intimate setting <br><span>4 commentaires</span></figcaption>
+          <figcaption><span class="prix">29€</span> Feel-good vibes in intimate setting <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>4 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/reservees2.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/reservees2.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/reservees2.jpg" alt="gallery">
-          <figcaption>58€ Taste vegan cheese and learn how to make your own! <br><span>34 commentaires</span></figcaption>
+          <figcaption><span class="prix">58€</span> Taste vegan cheese and learn how to make your own! <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>34 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/reservees3.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/reservees3.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/reservees3.jpg" alt="gallery">
-          <figcaption>17€ Engage in a nite of art, music, dance<br><span>14 commentaires</span></figcaption>
+          <figcaption><span class="prix">17€</span> Engage in a nite of art, music, dance<br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>14 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/reservees6.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/reservees6.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/reservees6.jpg" alt="gallery">
-          <figcaption>57€ Cruise through Old Tokyo with a Cycling Pro<br><span>40 commentaires</span></figcaption>
+          <figcaption><span class="prix">57€</span> Cruise through Old Tokyo with a Cycling Pro<br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>40 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/reservees5.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/reservees5.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/reservees5.jpg" alt="gallery">
-          <figcaption>66€ Sip your way through Japan’s national spirits <br><span>82 commentaires</span></figcaption>
+          <figcaption><span class="prix">66€</span> Sip your way through Japan’s national spirits <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>82 commentaires</figcaption>
         </figure>
         </div>
       </section>
@@ -95,202 +100,212 @@
 <!-- ************************************************debut expériences************************************ -->
       <section class="experiences">
         <h2>expériences</h2>
-        <div class="gallery2">
+        <div class="gallery">
         <figure>
           <img class="pc" src="images/imagespc/experiences1.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/experiences1.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/experiences1.jpg" alt="gallery">
-          <figcaption>29€ Feel-good vibes in intimate setting <br><span>4 commentaires</span></figcaption>
+          <figcaption><span class="prix">29€</span> Feel-good vibes in intimate setting <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>4 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/experiences2.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/experiences2.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/experiences2.jpg" alt="gallery">
-          <figcaption>58€ Taste vegan cheese and learn how to make your own! <br><span>34 commentaires</span></figcaption>
+          <figcaption><span class="prix">58€</span> Taste vegan cheese and learn how to make your own! <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>34 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/experiences3.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/experiences3.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/experiences3.jpg" alt="gallery">
-          <figcaption>17€ Engage in a nite of art, music, dance<br><span>14 commentaires</span></figcaption>
+          <figcaption><span class="prix">17€</span> Engage in a nite of art, music, dance<br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>14 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/experiences4.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/experiences4.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/experiences4.jpg" alt="gallery">
-          <figcaption>57€ Cruise through Old Tokyo with a Cycling Pro<br><span>40 commentaires</span></figcaption>
+          <figcaption><span class="prix">57€</span> Cruise through Old Tokyo with a Cycling Pro<br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>40 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/experiences5.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/experiences5.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/experiences5.jpg" alt="gallery">
-          <figcaption>66€ Sip your way through Japan’s national spirits <br><span>82 commentaires</span></figcaption>
+          <figcaption><span class="prix">66€</span> Sip your way through Japan’s national spirits <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>82 commentaires</figcaption>
         </figure>
         </div>
       </section>
 <!-- *******************************************fin expériences********************************************* -->
 <!-- ************************************************debut logements************************************************** -->
       <section class="logements">
-        <h2>logements1</h2>
-        <div class="gallery3">
+        <h2>logements</h2>
+        <div class="gallery">
         <figure>
           <img class="pc" src="images/imagespc/logements1.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/logements1.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/logements1.jpg" alt="gallery">
-          <figcaption>29€ Feel-good vibes in intimate setting <br><span>4 commentaires</span></figcaption>
+          <figcaption><span class="prix">29€ Feel-good vibes in intimate setting</span> <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>4 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/logements2.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/logements2.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/logements2.jpg" alt="gallery">
-          <figcaption>58€ Taste vegan cheese and learn how to make your own! <br><span>34 commentaires</span></figcaption>
+          <figcaption><span class="prix">58€ Taste vegan cheese and learn how to make your own!</span> <br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>34 commentaires</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/logements3.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/logements3.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/logements3.jpg" alt="gallery">
-          <figcaption>17€ Engage in a nite of art, music, dance<br><span>14 commentaires</span></figcaption>
+          <figcaption><span class="prix">17€ Engage in a nite of art, music, dance</span><br><span class="etoile"><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span>14 commentaires</figcaption>
         </figure>
         </div>
+      </section>
 <!-- *****************************************************fin logements******************************************** -->
 <!-- ***************************************************debut déstinations à la une************************************** -->
       <section class="destination">
-        <h2>expériences</h2>
-        <div class="gallery4">
+        <h2>Déstinations</h2>
+        <div class="gallery">
         <figure>
           <img class="pc" src="images/imagespc/destination1.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/destination1.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/destination1.jpg" alt="gallery">
-          <figcaption>29€ Feel-good vibes in intimate setting <br><span>4 commentaires</span></figcaption>
+          <figcaption>Nairobi</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/destination2.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/destination2.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/destination2.jpg" alt="gallery">
-          <figcaption>58€ Taste vegan cheese and learn how to make your own! <br><span>34 commentaires</span></figcaption>
+          <figcaption>Londres</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/destination3.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/destination3.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/destination3.jpg" alt="gallery">
-          <figcaption>17€ Engage in a nite of art, music, dance<br><span>14 commentaires</span></figcaption>
+          <figcaption>Paris</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/destination4.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/destination4.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/destination4.jpg" alt="gallery">
-          <figcaption>57€ Cruise through Old Tokyo with a Cycling Pro<br><span>40 commentaires</span></figcaption>
+          <figcaption>Florence</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/destination5.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/destination5.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/destination5.jpg" alt="gallery">
-          <figcaption>66€ Sip your way through Japan’s national spirits <br><span>82 commentaires</span></figcaption>
+          <figcaption>Tokyo</figcaption>
         </figure>
 
         <figure>
           <img class="pc" src="images/imagespc/destination6.jpg" alt="gallery">
           <img class="tab" src="images/imagestab/destination6.jpg" alt="gallery">
           <img class="tel" src="images/imagestel/destination6.jpg" alt="gallery">
-          <figcaption>66€ Sip your way through Japan’s national spirits <br><span>82 commentaires</span></figcaption>
+          <figcaption>Sèoul</figcaption>
         </figure>
         </div>
       </section>
 <!-- **********************************************************fin déstinations à la une**************************** -->
+
+
 <!-- ***********************************************debut estimer*********************************************************** -->
       <section class="estimer">
         <div class="revenu">
           <h2>Ouvrez la porte  à un voyageur et à une nouvelle vie</h2>
-          <p>Complétez vos revenus en accueillant des voyageurs.</p>
-          <button type="button" name="button">estimer mes revenus</button>
+          <p>Complétez vos revenus <br>en accueillant des voyageurs.</p>
+          <button class="estimer-revenu" type="button" name="button">Estimer mes revenus</button>
         </div>
         <figure>
-          <img src="images/imagespc/estimer.jpg" alt="estimer">
-          <img src="images/imagestab/estimer.jpg" alt="estimer">
-          <img src="images/imagestel/estimer.jpg" alt="estimer">
+          <img class="pc" src="images/imagespc/estimer.jpg" alt="estimer">
+          <img class="tab" src="images/imagestab/estimer.jpg" alt="estimer">
+          <img class="tel" src="images/imagestel/estimer.jpg" alt="estimer">
         </figure>
       </section>
-<!-- *********************************************fin estimer***************************************** -->
     </main>
+    <!-- *********************************************fin estimer***************************************** -->
+
+
 <!-- ******************************************debut footer****************************************************** -->
     <footer>
       <div class="haut">
         <div class="choix">
          <select class="langues">
-           <option value="français">français</option>
+           <option value="français">Français</option>
            <option value="anglais">anglais</option>
-           <option value="ect">ect</option>
-           <option value="ect">ect</option>
-           <option value="ect">ect</option>
-           <option value="ect">ect</option>
+           <option value="ect">etc</option>
+           <option value="ect">etc</option>
+           <option value="ect">etc</option>
+           <option value="ect">etc</option>
          </select>
 
          <select class="devis">
-           <option value="euro">Euro</option>
-           <option value="dollar">dollar</option>
-           <option value="ect">ect</option>
-           <option value="ect">ect</option>
-           <option value="ect">ect</option>
-           <option value="ect">ect</option>
+           <option value="euro">EUR</option>
+           <option value="dollar">DOL</option>
+           <option value="ect">etc</option>
+           <option value="ect">etc</option>
+           <option value="ect">etc</option>
+           <option value="ect">etc</option>
          </select>
         </div>
 
-      <section class="airbnb">
-        <h3>Airbnb</h3>
+      <div class="airbnb">
         <ul>
-          <li>A propos</li>
-          <li>carrières</li>
-          <li>Presse</li>
-          <li>Réglages</li>
-          <li>Aides</li>
-          <li>diversité et intégration.</li>
+          <li>Airbnb</li>
+          <li><a>A propos</a></li>
+          <li><a>carrières</a></li>
+          <li><a>Presse</a></li>
+          <li><a>Réglages</a></li>
+          <li><a>Aides</a></li>
+          <li><a>diversité et intégration.</a></li>
         </ul>
-      </section>
+      </div>
 
-      <section class="decouvrir">
-        <h3>découvrir</h3>
+      <div class="decouvrir">
         <ul>
-          <li>Confiance et sécurité</li>
-          <li>Crédit voyage</li>
-          <li>Airbnb citizen</li>
-          <li>Voyage d'affaires</li>
-          <li>Guides</li>
+          <li>découvrir</li>
+          <li><a>Confiance et sécurité</a></li>
+          <li><a>Crédit voyage</a></li>
+          <li><a>Airbnb citizen</a></li>
+          <li><a>Voyage d'affaires</a></li>
+          <li><a>Guides</a></li>
         </ul>
-      </section>
+      </div>
 
-      <section class="hebergement">
-        <h3>Hébergement</h3>
+      <div class="hebergement">
         <ul>
-          <li>Pourquoi être hôte</li>
-          <li>Hospitalité</li>
-          <li>Hebergement résponsable</li>
+          <li>Hébergement</li>
+          <li><a>Pourquoi être hôte</a></li>
+          <li><a>Hospitalité</a></li>
+          <li><a>Hebergement résponsable</a></li>
         </ul>
-      </section>
+      </div>
      </div>
 
      <div class="bas">
-       <div class="droite">
-         <img src="images/logo/icon.png" alt="logo">
+       <div class="gauche">
+         <img class="icon" src="images/icon/airbnb.ico" alt="logo"><p>Airbnb,Inc.</p>
        </div>
-       <ul>
-         <li>Conditions</li>
-         <li>Politique de confidentialité</li>
-         <li>Plan du site</li>
-         <li><span class="css/.icon-facebook2"></span></li>
-         <li><span class="css/.icon-facebook2"></span></li>
-         <li><span class="css/.icon-facebook2"></span></li>
-       </ul>
+       <div class="droite">
+        <ul>
+          <li><a>Conditions</a></li>
+          <li><a>Politique de confidentialité</a></li>
+          <li><a>Plan du site</a></li>
+          <li><a><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a></li>
+          <li><a><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
+          <li><a><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a></li>
+        </ul>
+       </div>
      </div>
     </footer>
+
+    <script src="https://use.fontawesome.com/40917ba2bf.js"></script>
+
   </body>
 </html>
