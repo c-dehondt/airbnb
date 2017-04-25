@@ -5,10 +5,7 @@ border:1px solid red;
 /***************debut de "en commun"************************/
 body{
   margin:0%;
-}
-
-*{
-  font-family: 'karla' sans-serif;
+  font-family: karla sans-serif;
   color: #484848;
 }
 
@@ -16,17 +13,13 @@ nav i{
   vertical-align: text-top;
   margin:15px;
 }
-.pc, .tab, .airbnb, .decouvrir, .hebergement{
-  display: none;
-}
-
 
 .recherche, nav, .choix{
   margin-top:50px;
 }
 
 main, h1, .recherche, .tablette, footer{
-  margin-left: 24px;
+  margin-left:5%;
 }
 
 header, nav, .gallery{
@@ -42,7 +35,8 @@ header, nav, .gallery{
   border-style: none;
   border:1px solid #DBDBDB;
 }
-.langues, .devis, .recherche, .tablette,{
+
+.langues, .devis, .recherche, .tablette{
 border:1px solid #DBDBDB;
 }
 
@@ -62,7 +56,12 @@ footer, .bas{
   border-top:1px solid #DBDBDB;
 }
 /*******************fin de "en commun"*********************/
-/*header*/
+
+.pc, .tab, .airbnb, .decouvrir, .hebergement{
+  display: none;
+}
+
+/**********************header***********************/
 h1{
   font-size: 20px;
   list-style: 30px;
@@ -127,6 +126,8 @@ nav{
   color:#00A699;
 }
 /*************************************fin des galleries**************************/
+
+
 /****************************************debut estimer***************************/
 .estimer{
   display: flex;
@@ -153,6 +154,8 @@ nav{
   height:35px;
 }
 /*****************************************fin estimer****************************/
+
+
 /********************************************debut footer***********************/
 footer{
   width: 100%;
@@ -204,6 +207,7 @@ flex-flow: column;
 
 
 @media screen and (min-width:768px){
+
 .pc, .tel, .recherche{
    display: none;
 }
@@ -214,7 +218,7 @@ flex-flow: column;
 
 h1{
   font-size: 38px;
-  line-height: 56px:
+  line-height: 56px;
 }
 
 .tablette{
@@ -239,8 +243,9 @@ h1{
 }
 
 .tablette a:nth-child(3){
-  
+
 }
+
 .estimer{
   flex-flow: nowrap;
   display: flex;
@@ -252,10 +257,17 @@ footer{
   margin-top: 5%;
   width:100%;
 }
+
 .haut{
   display: flex;
   flex-flow: row;
+  align-items: stretch;
 }
+
+.choix {
+ margin-top: 0;
+}
+
 .choix .devis{
   display: flex;
   flex-flow: column;
@@ -269,6 +281,7 @@ footer{
   line-height: 18px;
   justify-content:space-between;
   margin-left:10%;
+  margin-top: 0;
 }
 
 .bas{
@@ -288,4 +301,103 @@ footer{
   flex-flow:nowrap;
   justify-content:space-around;
   align-content: space-around;
+}
+}
+
+
+/***************************************************mode pc********************************/
+/***********************************************************************************/
+
+
+@media screen and (min-width:1280px){
+
+.tab, .tablette, .tel{
+   display: none;
+}
+
+.pc{
+  display:block;
+}
+
+header{
+  display: flex;
+  flex-flow:column;
+  justify-content: space-between;
+}
+
+.accueil{
+  display: flex;
+  flex-flow: row;
+}
+
+.home{
+  width:35%;
+  margin-top:0%;
+  margin-left:60%;
+  border:none;
+  box-shadow:none;
+}
+
+.menu{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left:auto;
+  overflow: hidden;
+}
+
+nav, .gallery{
+  overflow: hidden;
+}
+
+header .navigation{
+  display: flex;
+  flex-flow: row nowrap;
+  height: 70px;
+  width: 90%;
+  margin-left:5%;
+  border: 1px solid #DBDBDB;
+  border-radius:5px;
+}
+
+.info{
+  width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin-left:2%;
+  margin-top:8%;
+  height: 100%;
+}
+
+h1{
+  width: 50%;
+  font-size: 35px;
+  padding-top: 15%;
+}
+
+
+input{
+  width:50%;
+  font-size: 20px;
+  border-style: none;
+  padding: 10% 0% 10% 0%;
+}
+
+.info:nth-child(2){
+  border-left: 1px solid #DBDBDB;
+  border-right: 1px solid #DBDBDB;
+  padding-left:3%;
+  width:40%;
+}
+
+.info button{
+ background-color: #ff5A5F;
+ color: white;
+ margin-top:15%;
+ padding:20% 5% 20% 5%;
+ width: 45%;
+ border-style: none;
+ border-radius:4px;
+}
+
 }
